@@ -20,12 +20,32 @@
             padding: 0;
             margin: 0;
         }
+
+        .home-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #7b2cbf; /* ungu */
+            color: #ffffff; /* putih */
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .home-btn:hover {
+            background-color: #5a189a;
+        }
         </style>
         <title>Peta Tematik Persebaran Taman dan Hutan Kota di Kecamatan Klojen</title>
     </head>
     <body>
         <div id="map">
         </div>
+        <a href="index.html" class="home-btn">Home</a>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/L.Control.Layers.Tree.min.js"></script>
